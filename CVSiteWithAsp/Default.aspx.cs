@@ -8,6 +8,8 @@ public partial class _Default : System.Web.UI.Page
         if (!IsPostBack)
         {
             tbl_aboutTableAdapter aboutAdapter = new tbl_aboutTableAdapter();
+            string fullname = (aboutAdapter.GetAbout()[0]["abt_name"] + " " + aboutAdapter.GetAbout()[0]["abt_surname"]).ToString();
+            name.Text = fullname;
             Repeater1.DataSource = aboutAdapter.GetAbout();
             Repeater1.DataBind();
 
@@ -19,13 +21,17 @@ public partial class _Default : System.Web.UI.Page
             Repeater3.DataSource = educationAdapter.GetEducation();
             Repeater3.DataBind();
 
-            tbl_interestTableAdapter interestAdapter = new tbl_interestTableAdapter();
-            Repeater4.DataSource = interestAdapter.GetInterest();
+            tbl_skillsTableAdapter skillAdapter = new tbl_skillsTableAdapter();
+            Repeater4.DataSource = skillAdapter.GetSkills();
             Repeater4.DataBind();
 
-            tbl_awardTableAdapter awardAdapter = new tbl_awardTableAdapter();
-            Repeater5.DataSource = awardAdapter.GetAward();
+            tbl_interestTableAdapter interestAdapter = new tbl_interestTableAdapter();
+            Repeater5.DataSource = interestAdapter.GetInterest();
             Repeater5.DataBind();
+
+            tbl_awardTableAdapter awardAdapter = new tbl_awardTableAdapter();
+            Repeater6.DataSource = awardAdapter.GetAward();
+            Repeater6.DataBind();
         }
     }
 }

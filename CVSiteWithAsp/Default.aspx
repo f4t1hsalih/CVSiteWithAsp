@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>f4t1hsalih</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/Folders/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-block d-lg-none">
+                <asp:Label ID="name" runat="server" Text="***"></asp:Label>
+            </span>
             <span class="d-none d-lg-block">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/Folders/img/prof.jpg" alt="">
             </span>
@@ -190,39 +192,33 @@
                         <i class="fab fa-node-js"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-github-square"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-less"></i>
+                        <i class="fab fa-stack-overflow"></i>
                     </li>
                     <li class="list-inline-item">
                         <i class="fab fa-wordpress"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-gulp"></i>
+                        <i class="fab fa-java"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-grunt"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fab fa-npm"></i>
+                        <i class="fab fa-docker"></i>
                     </li>
                 </ul>
 
                 <div class="subheading mb-3">İş Akışı</div>
                 <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Mobile-First, Responsive Design</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Browser Testing &amp; Debugging</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Functional Teams</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum</li>
+                    <asp:Repeater ID="Repeater4" runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <asp:Label ID="skl_skills" runat="server" Text='<%#Eval("skl_skills") %>'></asp:Label>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
                 </ul>
             </div>
         </section>
@@ -232,7 +228,7 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
             <div class="my-auto">
                 <h2 class="mb-5">İLGİ ALANLARI</h2>
-                <asp:Repeater ID="Repeater4" runat="server">
+                <asp:Repeater ID="Repeater5" runat="server">
                     <ItemTemplate>
                         <p class="mb-0">
                             <asp:Label ID="int_interest" runat="server" Text='<%#Eval("int_interest") %>'></asp:Label>
@@ -248,7 +244,7 @@
             <div class="my-auto">
                 <h2 class="mb-5">ÖDÜLLER &amp; SERTİFİKALAR</h2>
                 <ul class="fa-ul mb-0">
-                    <asp:Repeater ID="Repeater5" runat="server">
+                    <asp:Repeater ID="Repeater6" runat="server">
                         <ItemTemplate>
                             <li>
                                 <i class="fa-li fa fa-trophy text-warning"></i>
