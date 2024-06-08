@@ -14,6 +14,10 @@ public partial class _Default : System.Web.UI.Page
             tbl_experienceTableAdapter experienceAdapter = new tbl_experienceTableAdapter();
             Repeater2.DataSource = experienceAdapter.GetExperience();
             Repeater2.DataBind();
+
+            tbl_educationTableAdapter educationAdapter = new tbl_educationTableAdapter();
+            Repeater3.DataSource = educationAdapter.GetEducation();
+            Repeater3.DataBind();
         }
     }
 }

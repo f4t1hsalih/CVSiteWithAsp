@@ -137,29 +137,29 @@
             <div class="my-auto">
                 <h2 class="mb-5">Eğitim</h2>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">University of Colorado Boulder</h3>
-                        <div class="subheading mb-3">Bachelor of Science</div>
-                        <div>Computer Science - Web Development Track</div>
-                        <p>GPA: 3.23</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2006 - May 2010</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">James Buchanan High School</h3>
-                        <div class="subheading mb-3">Technology Magnet Program</div>
-                        <p>GPA: 3.56</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2002 - May 2006</span>
-                    </div>
-                </div>
-
+                <asp:Repeater ID="Repeater3" runat="server">
+                    <ItemTemplate>
+                        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                            <div class="resume-content mr-auto">
+                                <h3 class="mb-0">
+                                    <asp:Label ID="edc_title" runat="server" Text='<%#Eval("edc_title") %>'></asp:Label>
+                                </h3>
+                                <div class="subheading mb-3">
+                                    <asp:Label ID="edc_subtitle" runat="server" Text='<%#Eval("edc_subtitle") %>'></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:Label ID="edc_description" runat="server" Text='<%#Eval("edc_description") %>'></asp:Label>
+                                </div>
+                                <p>
+                                    <asp:Label ID="edc_note" runat="server" Text='<%#Eval("edc_note") %>'></asp:Label>
+                                </p>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <asp:Label ID="edc_date" class="text-primary" runat="server" Text='<%#Eval("edc_date") %>'></asp:Label>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
         </section>
 
