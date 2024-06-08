@@ -18,6 +18,10 @@ public partial class _Default : System.Web.UI.Page
             tbl_educationTableAdapter educationAdapter = new tbl_educationTableAdapter();
             Repeater3.DataSource = educationAdapter.GetEducation();
             Repeater3.DataBind();
+
+            tbl_interestTableAdapter interestAdapter = new tbl_interestTableAdapter();
+            Repeater4.DataSource = interestAdapter.GetInterest();
+            Repeater4.DataBind();
         }
     }
 }
