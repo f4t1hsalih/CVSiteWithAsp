@@ -40,22 +40,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Hakkında</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Deneyimler</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#education">Eğitim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills">Beceriler</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Hobiler</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#awards">Başarılar</a>
           </li>
         </ul>
       </div>
@@ -65,11 +65,11 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Clarence
-            <span class="text-primary">Taylor</span>
+          <h1 class="mb-0">Salih
+            <span class="text-primary">Doğan</span>
           </h1>
-          <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-            <a href="mailto:name@email.com">name@email.com</a>
+          <div class="subheading mb-5">İstanbul - Türkiye · (555) 555-5555 ·
+            <a href="mailto:name@email.com">f4t1hsalih@gmail.com</a>
           </div>
           <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
           <div class="social-icons">
