@@ -63,38 +63,43 @@
     <div class="container-fluid p-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0" runat="server">
-                    <asp:Label ID="name" runat="server" Text="***"></asp:Label>
-                    <asp:Label ID="surname" class="text-primary" runat="server" Text="***"></asp:Label>
-                </h1>
-                <div class="subheading mb-5" runat="server">
-                    <asp:Label ID="address" runat="server" Text="***"></asp:Label>
-                    ·
-                    <asp:Label ID="tel" runat="server" Text="***"></asp:Label>
-                    ·
-            <a href="mailto:name@email.com" runat="server">
-                <asp:Label ID="mail" runat="server" Text="***"></asp:Label>
-            </a>
-                </div>
-                <p class="lead mb-5">
-                    <asp:Label ID="note" runat="server" Text="***"></asp:Label>
-                </p>
-                <div class="social-icons">
-                    <a href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <div class="my-auto">
+                        <h1 class="mb-0" runat="server">
+                            <asp:Label ID="name" runat="server" Text='<%#Eval("abt_name")%>'></asp:Label>
+                            <asp:Label ID="surname" class="text-primary" runat="server" Text='<%#Eval("abt_surname")%>'></asp:Label>
+                        </h1>
+                        <div class="subheading mb-5" runat="server">
+                            <asp:Label ID="address" runat="server" Text='<%#Eval("abt_address")%>'></asp:Label>
+                            ·
+                    <asp:Label ID="tel" runat="server" Text='<%#Eval("abt_tel")%>'></asp:Label>
+                            ·
+                            <a href="mailto:<%#Eval("abt_mail")%>">
+                                <asp:Label ID="mail" runat="server" Text='<%#Eval("abt_mail")%>'></asp:Label>
+                            </a>
+
+                        </div>
+                        <p class="lead mb-5">
+                            <asp:Label ID="note" runat="server" Text='<%#Eval("abt_note")%>'></asp:Label>
+                        </p>
+                        <div class="social-icons">
+                            <a href='<%#Eval("abt_linkedin")%>'>
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href='<%#Eval("abt_github")%>'>
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href='<%#Eval("abt_twitter")%>'>
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href='<%#Eval("abt_instagram")%>'>
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </section>
 
         <hr class="m-0">
