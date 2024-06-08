@@ -106,7 +106,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
-                <h2 class="mb-5">Deneyimler</h2>
+                <h2 class="mb-5">DENEYİMLER</h2>
                 <asp:Repeater ID="Repeater2" runat="server">
                     <ItemTemplate>
                         <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -135,7 +135,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
             <div class="my-auto">
-                <h2 class="mb-5">Eğitim</h2>
+                <h2 class="mb-5">EĞİTİM</h2>
 
                 <asp:Repeater ID="Repeater3" runat="server">
                     <ItemTemplate>
@@ -169,7 +169,7 @@
             <div class="my-auto">
                 <h2 class="mb-5">Yetenekler</h2>
 
-                <div class="subheading mb-3">Programlama Dilleri &amp; Araçlar</div>
+                <div class="subheading mb-3">PROGRAMLAMA DİLLERİ &amp; ARAÇLAR</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">
                         <i class="fab fa-html5"></i>
@@ -231,7 +231,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
             <div class="my-auto">
-                <h2 class="mb-5">İlgi Alanları</h2>
+                <h2 class="mb-5">İLGİ ALANLARI</h2>
                 <asp:Repeater ID="Repeater4" runat="server">
                     <ItemTemplate>
                         <p class="mb-0">
@@ -246,34 +246,16 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
-                <h2 class="mb-5">Ödüller &amp; Sertifikalar</h2>
+                <h2 class="mb-5">ÖDÜLLER &amp; SERTİFİKALAR</h2>
                 <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Google Analytics Certified Developer</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Mobile Web Specialist - Google Certification</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        2<sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        3<sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005</li>
+                    <asp:Repeater ID="Repeater5" runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                <asp:Label ID="awd_award" runat="server" Text='<%#Eval("awd_award") %>'></asp:Label>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </ul>
             </div>
         </section>

@@ -22,6 +22,10 @@ public partial class _Default : System.Web.UI.Page
             tbl_interestTableAdapter interestAdapter = new tbl_interestTableAdapter();
             Repeater4.DataSource = interestAdapter.GetInterest();
             Repeater4.DataBind();
+
+            tbl_awardTableAdapter awardAdapter = new tbl_awardTableAdapter();
+            Repeater5.DataSource = awardAdapter.GetAward();
+            Repeater5.DataBind();
         }
     }
 }
