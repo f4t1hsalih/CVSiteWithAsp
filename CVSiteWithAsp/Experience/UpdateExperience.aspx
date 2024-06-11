@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" CodeFile="AddExperience.aspx.cs" Inherits="Experience_AddExperience" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" CodeFile="UpdateExperience.aspx.cs" Inherits="Experience_UpdateExperience" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHhead" runat="Server">
 </asp:Content>
@@ -26,7 +26,7 @@
                         <asp:TextBox runat="server" ID="txtDate" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Button runat="server" ID="btnAddExperience" CssClass="btn btn-primary" Text="Ekle" OnClick="btnAddExperience_Click" />
+                        <asp:Button runat="server" ID="btnUpdateExperience" CssClass="btn btn-primary" Text="Güncelle"/>
                     </div>
                 </form>
             </div>
