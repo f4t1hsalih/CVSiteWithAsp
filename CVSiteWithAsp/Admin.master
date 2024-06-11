@@ -14,7 +14,7 @@
     <!-- Bootstrap CSS CDN -->
     <link href="/AdminFolders/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Our Custom CSS -->
-    <link href="/AdminFolders/sidebar/style.css" rel="stylesheet" />
+    <link href="/AdminFolders/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
 

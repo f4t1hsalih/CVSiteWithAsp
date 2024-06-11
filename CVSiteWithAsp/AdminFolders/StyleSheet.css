@@ -60,7 +60,7 @@ i, span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #bd5d38; /* Changed color */
     color: #fff;
     transition: all 0.3s;
 }
@@ -81,6 +81,7 @@ i, span {
 
     #sidebar ul li a {
         text-align: left;
+        color: #fff; /* Ensure links are white */
     }
 
     #sidebar.active ul li a {
@@ -104,14 +105,12 @@ i, span {
         top: auto;
         bottom: 5px;
         right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
         transform: translateX(50%);
     }
 
     #sidebar .sidebar-header {
         padding: 20px;
-        background: #6d7fcc;
+        background: #a55231; /* Changed color */
     }
 
         #sidebar .sidebar-header strong {
@@ -121,7 +120,7 @@ i, span {
 
     #sidebar ul.components {
         padding: 20px 0;
-        border-bottom: 1px solid #47748b;
+        border-bottom: 1px solid #a55231; /* Changed color */
     }
 
     #sidebar ul li a {
@@ -131,7 +130,7 @@ i, span {
     }
 
         #sidebar ul li a:hover {
-            color: #7386D5;
+            color: #bd5d38; /* Changed color */
             background: #fff;
         }
 
@@ -141,9 +140,8 @@ i, span {
 
     #sidebar ul li.active > a, a[aria-expanded="true"] {
         color: #fff;
-        background: #6d7fcc;
+        background: #a55231; /* Changed color */
     }
-
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -162,11 +160,10 @@ a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
-
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #a55231; /* Changed color */
 }
 
 ul.CTAs {
@@ -183,15 +180,13 @@ ul.CTAs {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #bd5d38; /* Changed color */
 }
 
 a.article, a.article:hover {
-    background: #6d7fcc !important;
+    background: #a55231 !important; /* Changed color */
     color: #fff !important;
 }
-
-
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -202,7 +197,6 @@ a.article, a.article:hover {
     min-height: 100vh;
     transition: all 0.3s;
 }
-
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -219,8 +213,6 @@ a.article, a.article:hover {
         top: auto;
         bottom: 5px;
         right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
         transform: translateX(50%);
     }
 
