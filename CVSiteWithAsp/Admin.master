@@ -33,7 +33,7 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#">
+                    <a href="/About/ListAbout.aspx">
                         <i class="glyphicon glyphicon-home"></i>
                         Hakkında
                     </a>

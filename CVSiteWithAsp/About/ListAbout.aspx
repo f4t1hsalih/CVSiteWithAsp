@@ -38,7 +38,23 @@
                         <asp:TextBox runat="server" ID="txtPhoto" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Button runat="server" ID="btnAboutUpdate" CssClass="btn btn-primary" Text="Güncelle"/>
+                        <label runat="server" id="lblLinkedIn">LinkedIn</label>
+                        <asp:TextBox runat="server" ID="txtLinkedIn" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label runat="server" id="lblGitHub">GitHub</label>
+                        <asp:TextBox runat="server" ID="txtGitHub" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label runat="server" id="lblTwitter">Twitter</label>
+                        <asp:TextBox runat="server" ID="txtTwitter" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label runat="server" id="lblInstgram">Instagram</label>
+                        <asp:TextBox runat="server" ID="txtInstagram" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <asp:Button runat="server" ID="btnAboutUpdate" CssClass="btn btn-primary" Text="Güncelle" OnClick="btnAboutUpdate_Click" />
                     </div>
                 </form>
             </div>
