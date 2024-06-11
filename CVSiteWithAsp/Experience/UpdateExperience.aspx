@@ -26,7 +26,7 @@
                         <asp:TextBox runat="server" ID="txtDate" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Button runat="server" ID="btnUpdateExperience" CssClass="btn btn-primary" Text="Güncelle"/>
+                        <asp:Button runat="server" ID="btnUpdateExperience" CssClass="btn btn-primary" Text="Güncelle" OnClick="btnUpdateExperience_Click"/>
                     </div>
                 </form>
             </div>

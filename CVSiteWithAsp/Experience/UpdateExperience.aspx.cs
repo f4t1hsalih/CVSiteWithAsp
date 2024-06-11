@@ -16,4 +16,12 @@ public partial class Experience_UpdateExperience : System.Web.UI.Page
             txtDate.Text = value[0]["exp_date"].ToString();
         }
     }
+
+    protected void btnUpdateExperience_Click(object sender, EventArgs e)
+    {
+        tbl_experienceTableAdapter experienceTableAdapter = new tbl_experienceTableAdapter();
+        int id = Convert.ToInt16(Request.QueryString["Update"]);
+        experienceTableAdapter.UpdateExperience(txtTitle.Text, txtSubtitle.Text, txtDescription.Text, txtDate.Text, Convert.ToInt16(id));
+        Response.Redirect("/Experience/ListExperience.aspx");
+    }
 }
