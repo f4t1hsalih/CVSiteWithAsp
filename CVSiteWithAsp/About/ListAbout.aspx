@@ -10,7 +10,7 @@
                 <h2>Hakkında</h2>
                 <form runat="server" class="form-category">
                     <div class="form-group">
-                        <label runat="server" id="lblNamee">Adınız</label>
+                        <label runat="server" id="lblName">Adınız</label>
                         <asp:TextBox runat="server" ID="txtName" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
