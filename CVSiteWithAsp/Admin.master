@@ -9,6 +9,12 @@
 
     <title>Admin Page</title>
 
+    <script type="text/javascript">
+        function showErrorMessage(message) {
+            alert(message);
+        }
+    </script>
+
     <asp:ContentPlaceHolder ID="CPHhead" runat="server"></asp:ContentPlaceHolder>
 
     <!-- Bootstrap CSS CDN -->

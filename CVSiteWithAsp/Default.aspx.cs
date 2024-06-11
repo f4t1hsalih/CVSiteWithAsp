@@ -10,6 +10,7 @@ public partial class _Default : System.Web.UI.Page
             tbl_aboutTableAdapter aboutAdapter = new tbl_aboutTableAdapter();
             string fullname = (aboutAdapter.GetAbout()[0]["abt_name"] + " " + aboutAdapter.GetAbout()[0]["abt_surname"]).ToString();
             name.Text = fullname;
+            photo.ImageUrl = aboutAdapter.GetAbout()[0]["abt_photo"].ToString();
             Repeater1.DataSource = aboutAdapter.GetAbout();
             Repeater1.DataBind();
 

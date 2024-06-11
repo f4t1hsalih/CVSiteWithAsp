@@ -32,7 +32,7 @@
                 <asp:Label ID="name" runat="server" Text="***"></asp:Label>
             </span>
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/Folders/img/prof.jpg" alt="">
+                <asp:Image ID="photo" class="img-fluid img-profile rounded-circle mx-auto mb-2" runat="server" ImageUrl="***" alt="" />
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
