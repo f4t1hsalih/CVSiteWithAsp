@@ -15,7 +15,7 @@
                             <th>Başlık</th>
                             <th>Alt Başlık</th>
                             <th>Açıklaması</th>
-                            <th>Date</th>
+                            <th>Tarih</th>
                             <th>Sil</th>
                             <th>Güncelle</th>
                         </tr>

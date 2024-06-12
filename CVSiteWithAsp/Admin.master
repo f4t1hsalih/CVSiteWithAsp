@@ -43,7 +43,7 @@
                         <i class="glyphicon glyphicon-briefcase"></i>
                         Deneyimler
                     </a>
-                    <a href="#">
+                    <a href="/Education/ListEducation.aspx"">
                         <i class="glyphicon glyphicon-education"></i>
                         Eğitim
                     </a>
