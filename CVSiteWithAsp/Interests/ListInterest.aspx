@@ -24,9 +24,9 @@
                                     <th><%# Eval("int_id") %></th>
                                     <td><%# Eval("int_interest") %></td>
                                     <td>
-                                        <asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/Interests/DeleteInterests.aspx?Delete=" + Eval("int_id") %>'>Sil</asp:HyperLink></td>
+                                        <asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/Interests/DeleteInterest.aspx?Delete=" + Eval("int_id") %>'>Sil</asp:HyperLink></td>
                                     <td>
-                                        <asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/Interests/UpdateInterests.aspx?Update=" + Eval("int_id") %>'>Güncelle</asp:HyperLink></td>
+                                        <asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/Interests/UpdateInterest.aspx?Update=" + Eval("int_id") %>'>Güncelle</asp:HyperLink></td>
                                 </tr>
                             </ItemTemplate>
                         </asp:Repeater>

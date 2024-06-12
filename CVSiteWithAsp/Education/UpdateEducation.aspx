@@ -7,7 +7,7 @@
     <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h2>Eğitim Ekle</h2>
+            <h2>Eğitim Güncelle</h2>
             <form runat="server" class="form-category">
                 <div class="form-group">
                     <label runat="server" id="lblTitle">Başlık</label>
