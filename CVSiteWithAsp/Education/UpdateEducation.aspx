@@ -30,7 +30,7 @@
                     <asp:TextBox runat="server" ID="txtDate" CssClass="form-control"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <asp:Button runat="server" ID="btnUpdateEducation" CssClass="btn btn-primary" Text="Güncelle" />
+                    <asp:Button runat="server" ID="btnUpdateEducation" CssClass="btn btn-primary" Text="Güncelle" OnClick="btnUpdateEducation_Click" />
                 </div>
             </form>
         </div>
