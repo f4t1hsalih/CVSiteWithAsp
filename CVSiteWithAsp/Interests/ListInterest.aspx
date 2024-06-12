@@ -32,7 +32,7 @@
                         </asp:Repeater>
                     </tbody>
                 </table>
-                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-primary" NavigateUrl="/Interests/AddInterests.aspx">Yeni Hobi Ekle</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-primary" NavigateUrl="/Interests/AddInterest.aspx">Yeni Hobi Ekle</asp:HyperLink>
             </div>
         </div>
     </div>
