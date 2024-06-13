@@ -40,7 +40,7 @@
                             <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" class="form-control" placeholder="Şifre"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <asp:Button ID="btnLogin" runat="server" CssClass="btn float-right login_btn" Text="Giriş Yap" />
+                            <asp:Button ID="btnLogin" runat="server" CssClass="btn float-right login_btn" Text="Giriş Yap" OnClick="btnLogin_Click" />
                         </div>
                     </form>
                 </div>

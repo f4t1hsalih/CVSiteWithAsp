@@ -66,6 +66,12 @@
                         Başarılar
                     </a>
                 </li>
+                <li>
+                    <a href="/Login/LoginPage.aspx">
+                        <i class="glyphicon glyphicon-off"></i>
+                        Çıkış Yap
+                    </a>
+                </li>
             </ul>
         </nav>
 
